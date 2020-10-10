@@ -10,20 +10,18 @@ git:
 script:
   - yarn test
 notifications:
-  slack:
-    secure: "SPMdav2Kwlv9pjUiwh8qCNHNDyShA8kgKDFub3KJPrhzNiFjmCkVQ7xAolkVDUhNxiqp8ArDMZNfSWXijf12RkWKYsgSCXbZIqsfD1Pj6E5KJhCgv2JsyecxV4wwnkWSM5bExAaSTtOsgt02/XIhGGEO0m0OtKWYQZJt8JkDHn3K+etDsdvJhfIsNiwZx7H+HjLqBAztmpN8oNc4Edyzl89kJ3/FmLF0gWhP6YjdKmzhI8xSONykp+hT6LMWR9DhVkMBBrsZmZWVQutjv+ZVijsZPq75JsRWXH1NA8uqTPQt53Y1n8R9ICnY5y3JA+GDFkV+/NanFk1/5lnAvZCjtv80gHDTaOAR/ObnePUUsEerq2AFxaCR4DOTQLXfsh5Yu7qMck6ouvNgfN2nTDhLxF25DLPK2tybVsVhFl3GOWiOpudGcXhfGR8Gs9vRDNFdwjbXs58GQzieG9pf5N2Da9qtT+87gWvHjehshWfHFKVYV1k1vlyJ4v/AXeAPR4L1eTU8DgiixV98RghpTk2ioUKzFE7xTtoOo11LPtAlynJeK5FSHC0YI3CFRCEVzyh4Kfl84IAQxoY2aSjW/OXdHe8U0fM3ZljDEONTYx8DjfrIm+nn6OJVifi+2LdCB1QmA/5fPwCHxqahpWpb0BaqoxSwiVxZkNGxMZTGhQPZU+I="
+  slack: nmk-software:xaOUI6cPbSGZpcAxyQ9uGsJh
   email:
       recipients:
-        - oscar@platzi.com
-        - oscar@arepa.dev
+        - fmpedroporras@gmail.com
+        
       on_success: always
       on_failure: always
 deploy:
   provide: heroku
   skip-cleanup: true
   keep-history: true
-  api_key:
-    secure: "bLeKgbM2tYgrvjHoijjobDGZRPhfIKs+llk06HreJNPRy36EDoXlOo5dScY86yaiQQ4bWhzKLoDHqMzHQ+A60ek47aZ5ARlZbW3QqoNLL+RmuDV5657oDstFVvLMvlD6YQvJ6p48WXv5aTdpNLXdb7fwl7UTXlPehAsNSQyhM5BjyBLaK45DRf/qRWkhSuyXYQEzal/s/nElUaUVCTTojCRlW85zn0hwNseFRKB14DQfTbDxMbqZLq6AEM3bD4XfXnglPtjXDnkPU+StyklngxggA2bdkqmtBzJo8VszAE6aVRbY9UQaarBVQNqQ2q+W+/PkNp1UiQs1ptaPlmLToKi+79yucd/L0xmeO6zi5YH61NegiKirSDYHHaoh6c95VdbdcYjz5lPmVJMqmx8DLgV5+w3az/rG8SeszKtfZgc0unin/vGpkyEUzwZU+4zZVt/GEEck4f5vDUty5388mA/FBGzI2mk6YxJIEf7mMZhN5I7pyCppibbqqn7MPWWrVRifiTF+wvz4I5pDHPedLa89+sWfFtTY0CvrqGk3vSj3poEnVFCtZjNbLUuXVm18r1MRg/Cw3bVvTcTI4MkZlpoqjs9xc9y3TBEEni851r7d1OPVQFmu8R8Oi5UGQ6kpwlRuflV6DWaLPU5HkkFuA18LqvRVI8r2801XlH6eDxc="
-  app: platzi-store-backend
+  api_key: 6743509a-18d2-4530-9060-892ab7ef5435
+  app: curso-platzi-store
   on:
-    repo: dragonsmx/platzi-store-backend
+    repo: pedroporras/platzi-store-backend
